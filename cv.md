@@ -4,19 +4,19 @@
 
 ## Junior Front-End Developer
 
-### Общее
+### Summary
 
-IT-специалист в области Front-End разработки, верстальщик, фотоманипулятор, etc.  
-Я люблю бананы и играть в D&D.
+IT-specialist in Front-End development, photo-manipulator, etc.  
+I love Bananas and playing D&D
 
-### Навыки
+### Skills
 
 Javascript, HTML, CSS,  Git, GitHub, Figma, Photoshop, GMимнг xdd
 
-### Опыт
+### Expereince
 
-Хотелось бы.
+I whish
 
-### Образование
+### Education
 
 JS / Front-End --- RS School
