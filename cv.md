@@ -1,4 +1,4 @@
-# Fama Harbunou ![photo](../../Гедонизм/Гедонистичные%20PSD/Типы/Профессор%20Гедонист/Ава%20-%20февраль%202025.jpg)
+# Fama Harbunou
 
 #### gedonisticussr@gmail.com | @PG-54 tg.me | +375-29-678-69-98
 
