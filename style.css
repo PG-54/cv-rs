@@ -1,6 +1,6 @@
 :root{
   --COLOR-BROWN-LIGTH: #eec79b;
-  --COLOR-BROWN-DARK: #a57b47;
+  --COLOR-BROWN-DARK: #b38e62;
 }
 
 body {
@@ -9,66 +9,106 @@ body {
   color: var(--COLOR-BROWN-LIGTH);
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
 .logo {
   display: flex;
-  justify-content: center;
-}
-.logo div {
-  display: flex;
-  width: 50%;
+  width: 90%;
   flex-direction: column;
   align-items: center;
-}
-
-.logo img {
-  width: 60%;
-  height: auto;
-  border-radius: 50%;
-}
-.logo ul {
-  display: flex;
-  align-items: center;
-  padding: 0;
-}
-.logo li {
-  list-style: none;
-}
-
-.logo-name {
-  align-items: center;
   justify-content: center;
+  margin-bottom: 120px;
+  text-align: center;
 }
-.logo h1, .logo h2 {
-  margin: 5px;
+.headliner-name{
+  font-size: 1.4em;
+  margin: 0 0 5px;
+  color: var(--COLOR-BROWN-DARK)
 }
-.logo h1 {
+.headliner-qualification{
   font-size: 3em;
 }
-.logo hr {
-  width: 80%;
+.logo-img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3), -4px -4px 8px rgba(0, 0, 0, 0.3);
+}
+.logo div {
+  position: relative;
+  padding: 40px 0;
+}
+.logo div::before {
+  content: "";
+  display: block;
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  right: 6px;
+  top: 28px;
+  z-index: -1;
+  border-radius: 50%;
+  opacity: 30%;
+  background-color: #ffad49;
+}
+.logo div::after {
+  content: "";
+  display: block;
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  left: 6px;
+  bottom: 28px;
+  z-index: -1;
+  border-radius: 50%;
+  opacity: 30%;
+  background-color: #4d3211;
 }
 
-.hr-divisor {
-  margin: 20px 0 20px;
-}
-hr {
-  border-color: #ad906f;
-}
+
+
+
+
 
 .info {
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: column;
   font-size: 1.5em;
   justify-content: center;
+  align-items: center;
 }
 .info div {
-  width: 45%;
-}
-.info div p {
-  padding-left: 1em;
+  width: 70%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin: 50px 0 70px;
 }
 .info h3 {
   color: var(--COLOR-BROWN-DARK);
+  margin: 0;
+}
+.info div:not(h3){
+  margin-top: 0.5em;
+}
+.list-skills {
+  display: flex;
+  flex-flow: row wrap;
+  flex-shrink: 1;
+  flex-grow: 1;
+  column-gap: 5em;
+  justify-content: center;
+  align-items: center;
+}
+.list-skills li{
+  display: block;
+  width: 25%;
+  margin: 0.5em 0;
 }
