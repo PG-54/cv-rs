@@ -8,6 +8,7 @@ body {
   background-color: #0f0c11;
   color: var(--COLOR-BROWN-LIGTH);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -35,17 +36,72 @@ main {
 .headliner-qualification{
   font-size: 3em;
 }
+
+
+.logo ul, .logo li {
+  position: absolute;
+  list-style: none;
+}
+.icon-linkedin img {
+  transform: scale(0.85);
+}
+.icon-mail, .icon-github, .icon-linkedin {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  transform: scale(0.8);
+}
+.icon-mail {
+  right: 180px;
+  top: -269px;
+}
+.icon-github {
+  right: -221px;
+  top: -194px;
+}
+.icon-linkedin {
+  right: 160px;
+  top: -12px;
+}
+.icon-mail::before, .icon-github::before, .icon-linkedin::before {
+  content: "";
+  width: 150%;
+  height: 150%;
+  border-radius: 50%;
+  background-color: #fff;
+  display: block;
+  position: absolute;
+  z-index: -2;
+  right: -25%;
+  top: -25%;
+}
+.icon-mail::before{
+  background-color: #da70d6;
+}
+.icon-github::before{
+  background-color: #8b5cb3;
+}
+.icon-linkedin::before{
+  background-color: #6766b4;
+}
+
+
+
+
+
+
+
 .logo-img {
   width: 300px;
   height: 300px;
   border-radius: 50%;
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3), -4px -4px 8px rgba(0, 0, 0, 0.3);
 }
-.logo div {
+.logo-image-div{
   position: relative;
   padding: 40px 0;
 }
-.logo div::before {
+.logo-image-div::before {
   content: "";
   display: block;
   width: 300px;
@@ -58,7 +114,7 @@ main {
   opacity: 30%;
   background-color: #ffad49;
 }
-.logo div::after {
+.logo-image-div::after {
   content: "";
   display: block;
   width: 300px;
